@@ -51,6 +51,15 @@ plt.plot(data.Close, 'g')
 plt.show()
 st.pyplot(fig3)
 
+st.subheader('Price vs MA_5_days')
+ma_5_days = data.Close.rolling(5).mean()
+fig4= plt.figure(figsize=(10,8))
+plt.plot(ma_5_days, 'r')
+plt.plot(data.Close, 'g')
+plt.show()
+st.pyplot(fig4)
+
+
 x=[]
 y=[]
 
@@ -68,10 +77,10 @@ predict = predict * scale
 y= y* scale
 
 st.subheader('Original Price vs Predicted Price')
-fig4= plt.figure(figsize=(10,8))
+fig5= plt.figure(figsize=(10,8))
 plt.plot(predict, 'r', label = 'Original Price')
 plt.plot(y, 'g', label= 'Predicted Price')
 plt.xlabel('Time')
 plt.ylabel('Price')
 plt.show()
-st.pyplot(fig4)
+st.pyplot(fig5)
