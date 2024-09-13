@@ -1,5 +1,5 @@
 This is a Machine learning project using python to predict the stock market prices. This ML model is built with neural networks using TensorFlow Keras layers, Dense, Dropout, LSTM
-The model is trained to analayze past 10 years stock market data and to predict the moving average for 50 days, moving average for 50 vs 100 days, moving average for 100 vs 200 days,
+The model is trained to analayze past 10 years stock market data and to predict the moving average for 50 days, moving average for 50 vs 100 days, moving average for 100 vs 200 days, 5 days moving average and original price
 and finally original vs predicted data.
 
 
